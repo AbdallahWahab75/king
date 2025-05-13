@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+header,
+footer {
+    background-color: #715353;
+    color: white;
+    text-align: center;
+    padding: 1.86rem;
+}
+
+header h1,
+footer p {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 1rem;
+}
+
+
+.profile-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-info img {
+    width:50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.profile-info h2 {
+    font-size: 1.5rem;
+    color: #715353;
+}
+
+.details,
+.competence,
+.hobbies {
+    margin-bottom: 2rem;
+}
+
+.details ul, .competence ul {
+    list-style: none;
+    padding: 0;
+}
+
+.details li , .competence li{
+    margin: 0.5rem 0;
+}
+
+.details li strong, .competence li strong {
+    color: #715353;
+}
+
+.profile-info,
+.details,
+.competence,
+.hobbies {
+    width: 100%;
+    max-width: 600px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    .profile-info, .details, .competence, .hobbies {
+    flex: 1;
+    margin: 1rem;
+    }
+    }
+    
